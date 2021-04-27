@@ -19,7 +19,7 @@ app.use(cors({origin: 'http://localhost:3000'}));
 
 process.on('uncaughtException',err => { 
     console.log('Uncaught Exception occurs');
-    console.log(err.message,err.name);
+    console.log(err.message,err.name); 
     process.exit(1);
 })
 
@@ -32,7 +32,7 @@ process.on('uncaughtException',err => {
 
 // })
 
-// const upload=multer({
+// const upload=multer({ 
 //     storage
 // }).single('Image')
 
