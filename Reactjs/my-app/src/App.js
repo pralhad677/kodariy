@@ -5,6 +5,11 @@ import About from './Component/About'
 import Contact from './Component/Contact'
 import Help from './Component/Help'
 import Service from './Component/Services'
+import Admin from './Component/Admin'
+import Auth from './Component/Auth'
+import Login from './Component/Login'
+import DahsBoard from './Component/Dashboard'
+import Dashboard from './Component/Dashboard'
 function App(props) {
   return (
     <div>
@@ -26,6 +31,18 @@ function App(props) {
         <Route  path="/about">
          <About />
        
+        </Route>
+        <Route  path="/admin">
+         <Admin />
+        </Route>
+        <Route  path="/auth">
+         <Auth />
+        </Route>
+        <Route  path="/login">
+        <Login />
+        </Route>
+        <Route  path="/dashboard/:id">
+        <Dashboard />
         </Route>
 
       </Switch>
