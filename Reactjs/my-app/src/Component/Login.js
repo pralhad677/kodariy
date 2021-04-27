@@ -34,7 +34,8 @@ function Login() {
         if( password==='' || email===''){
             setError('please Fill up all the box')
         }
-        setState({password,email})
+        if(password!= '' || email!= '')setState({password,email})
+        
         // console.log(e)
     }
 

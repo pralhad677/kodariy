@@ -32,7 +32,8 @@ function Admin() {
         if(name==='' || password==='' || email===''){
             setError('please Fill up all the box')
         }
-        setState({name,password,email})
+        if(name != '' || password!= '' || email!= '')   setState({name,password,email})
+     
         // console.log(e)
     }
     // if(error){
