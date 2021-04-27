@@ -50,6 +50,8 @@ let b =()=>{
             <NavLink style={{ textDecoration: 'none' }} to="/contact" >Contact Us</NavLink>
             
             <NavLink style={{ textDecoration: 'none' }} to="/help" >Help</NavLink>
+            
+            <NavLink style={{ textDecoration: 'none' }} to="/admin" >Admin</NavLink>
                   
 
                </ul>
