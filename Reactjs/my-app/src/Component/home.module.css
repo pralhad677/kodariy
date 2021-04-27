@@ -1,0 +1,30 @@
+
+.topParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+
+.parent > a:nth-child(odd){
+    background-color: red;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parent  a:nth-child(even){
+    background-color: rgb(136, 252, 3);
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.parent  a:hover{
+    background-color:rgba(224, 224, 211,0.4);
+    /* cursor: pointer; */
+}
