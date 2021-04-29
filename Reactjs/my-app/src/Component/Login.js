@@ -58,7 +58,6 @@ function Login() {
                     console.log('data',data.data.message)
                     console.log(data.data.id)
                     if(data.data.message){
-                        
                         setId(data.data.id)
                         setRedirect(true)
                     }
@@ -68,11 +67,8 @@ function Login() {
                 })
             }
             catch(err){
-             
-             
-                throw new Error(err)
-                       }
-                   }
+             throw new Error(err)
+                       }}
            fetchApi()
                    
        

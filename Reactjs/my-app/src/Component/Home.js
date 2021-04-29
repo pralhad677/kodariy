@@ -8,7 +8,7 @@ import ImageLoader from './redux/index'
 
 function Home() {
     // let [state,setState] =React.useState(0)
-    let arr = React.useRef([1,2]);
+    let arr = React.useRef([]);
 
     const ref = React.useRef();
     

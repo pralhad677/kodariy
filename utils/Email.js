@@ -25,14 +25,15 @@ const transport =nodemailer.createTransport({
 //     subject:'testing',
 //     text:'k x khabar'
 // })
-let sendingEmail = (email,text)=>{
+let sendingEmail = (email,text,subject)=>{
     console.log('email in Email.js',email)
     console.log('text',text)
+    console.log('subject',subject)
  transport.sendMail({
     from:process.env.EMAIL,
     to:"gorkhalicoder1@gmail.com",
-    subject:'testing',
-    text:text
+    subject,
+    text
 },(err,data)=>{
     if(err){
         new AppError('error occurs',500)

@@ -8,8 +8,10 @@ import Service from './Component/Services'
 import Admin from './Component/Admin'
 import Auth from './Component/Auth'
 import Login from './Component/Login'
-import DahsBoard from './Component/Dashboard'
+// import DahsBoard from './Component/Dashboard'
 import Dashboard from './Component/Dashboard'
+import ErrorBoundary from './Component/ErrorBoundaer'
+
 function App(props) {
   return (
     <div>
@@ -56,6 +58,9 @@ function App(props) {
 
 export default function appWithErrorBoundary(props){
   return (
-    <App {...props}/>
+    <ErrorBoundary>
+        <App {...props}/>
+    </ErrorBoundary>
+  
   )
 }

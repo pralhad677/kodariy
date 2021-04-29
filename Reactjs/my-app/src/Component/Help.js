@@ -130,9 +130,9 @@ catch(err){
             <h1>Help</h1> 
             
             <NavLink style={{textDecoration: 'none'}} to="/">home</NavLink>
-            {
+            {/* {
                 {image1} && <img src={`data:image/jpg;base64,${image1}`} alt="pic"></img>
-            }
+            } */}
         </div>
     )
 }

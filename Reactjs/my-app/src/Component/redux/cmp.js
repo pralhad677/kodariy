@@ -43,7 +43,7 @@ function ImageComponent({id,arrayLength}) {
           }
      },[cb,i,arrayLength])
     return (
-        <div>
+        <div style={{marginBottom:"20px"}}>
             <h1>{arrayLength}</h1>
             <div style={{height:"300px",width:"300px"}} >
             {
