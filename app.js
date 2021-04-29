@@ -18,7 +18,7 @@ const compression = require('compression')
 app.use(cors({origin: 'http://localhost:3000'})); 
 
 process.on('uncaughtException',err => { 
-    console.log('Uncaught Exception occurs');
+    console.log('Uncaught Exception occurs'); 
     console.log(err.message,err.name); 
     process.exit(1);
 })

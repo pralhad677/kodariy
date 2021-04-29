@@ -35,9 +35,9 @@ function App(props) {
         <Route  path="/admin">
          <Admin />
         </Route>
-        <Route  path="/auth">
+        {/* <Route  path="/auth">
          <Auth />
-        </Route>
+        </Route> */}
         <Route  path="/login">
         <Login />
         </Route>

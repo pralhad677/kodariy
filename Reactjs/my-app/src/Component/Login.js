@@ -10,7 +10,7 @@ function Login() {
     let history = useHistory()
 
     function navFunction(id){
-        history.push(`/auth/${id}`)
+        history.push(`/dashboard/${id}`)
     }
     
     const [error,setError] = React.useState(null)

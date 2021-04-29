@@ -31,7 +31,7 @@ var storage = multer.diskStorage({
     })
 
 console.log('router')
-router.route('/').post(upload.single('Image'),controller.post)
+router.route('/').post(upload.single('Image'),controller.post).get(controller.countAndReturn)
 router.route('/:id').get(controller.getFile)
 // router.route('/').post( controller.post).get(controller.findAll)
 // router.route('/:id').delete(controller.delete).get(controller.findOne);
