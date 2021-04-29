@@ -45,9 +45,9 @@ function ImageComponent({id,arrayLength}) {
     return (
         <div>
             <h1>{arrayLength}</h1>
-            <div>
+            <div style={{height:"300px",width:"300px"}} >
             {
-                {image1} && <img src={`data:image/jpg;base64,${image1}`} alt="pic"></img>
+                {image1} && <img style={{height:"100%",width:"100%"}} src={`data:image/jpg;base64,${image1}`} alt="pic"></img>
             }
             </div>
              
