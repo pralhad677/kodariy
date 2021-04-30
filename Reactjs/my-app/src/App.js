@@ -11,6 +11,7 @@ import Login from './Component/Login'
 // import DahsBoard from './Component/Dashboard'
 import Dashboard from './Component/Dashboard'
 import ErrorBoundary from './Component/ErrorBoundaer'
+import FbCOmment from './Component/FbComent'
 
 function App(props) {
   return (
@@ -45,6 +46,9 @@ function App(props) {
         </Route>
         <Route  path="/dashboard/:id">
         <Dashboard />
+        </Route>
+        <Route  path="/FbComment">
+        <FbCOmment />
         </Route>
 
       </Switch>

@@ -26,6 +26,7 @@
     "nodemailer": "^6.5.0",
     "nodemon": "^2.0.7",
     "pdfkit": "^0.12.1",
+    "react-helmet": "^6.1.0",
     "sharp": "^0.28.1"
   }
 }
